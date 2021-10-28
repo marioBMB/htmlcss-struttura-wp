@@ -1,11 +1,17 @@
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin-top: 0;
 }
 
 .wrapper {
     width: 80%;
-    height: 100vh;
+    height: 100vw; /* se dessi vh non andrebbe in quanto i margin e i padding sono calcolati sempre rispetto alla larghezza */
     margin: 0 auto;
 }
 
@@ -17,7 +23,6 @@ body {
 
 
 header, section {
-    margin-bottom: 2%;
 }
 
 section:last-of-type {
@@ -31,7 +36,7 @@ section:last-of-type {
 
 
 #columns {
-    height: 70%;
+    height: 50%;
     background-color: #0088fc;
 }
 
@@ -41,6 +46,7 @@ section:last-of-type {
 
 #columns section {
     height: 81%;
+    
 }
 
 #columns header {
